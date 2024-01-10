@@ -1,0 +1,45 @@
+﻿@page
+@model CryptoTravel.Pages.Transfer.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Select Conversion Rate</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ConversionRate[0].BankName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ConversionRate[0].Rate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ConversionRate[0].TransactionFee)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ConversionRate[0].ConvertedAmount)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.ConversionRate) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.BankName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Rate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TransactionFee)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ConvertedAmount)
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

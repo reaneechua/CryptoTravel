@@ -1,7 +1,12 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using CryptoTravel.Data;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddDbContext<CryptoTravelContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("CryptoTravelContext") ?? throw new InvalidOperationException("Connection string 'CryptoTravelContext' not found.")));
 
 var app = builder.Build();
 

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CryptoTravel")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b19aaf89ee78dac97397290979bdee0c483f8853")]
 [assembly: System.Reflection.AssemblyProductAttribute("CryptoTravel")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CryptoTravel")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
